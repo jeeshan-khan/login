@@ -6,6 +6,9 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
   }
+  body{
+    position: relative;
+  }
   
   section {
     position: relative;
@@ -110,3 +113,24 @@
   }
   
  
+
+  /* Pop up */
+  .popUp{
+    left: 50%;
+    background-color: #d64c42;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    width: 70%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 10px;
+    top: 50%;
+    display: none;
+    transform: translate(-50%,-50%)scale(0);
+    transition: transform ease 1s;
+  }
