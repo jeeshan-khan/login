@@ -4,8 +4,8 @@ let password = document.querySelector("#pass");
 let submitBtn = document.querySelector("#btn");
 let popUP = document.querySelector(".popUp");
 
-let user = "admin";
-let passKey = "1234";
+let user = "gayatri-sahoo";
+let passKey = "2302";
 let combinedLoginKey = (user + passKey).toUpperCase();
 let page;
 submitBtn.addEventListener("click", () => {
