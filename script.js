@@ -29,7 +29,7 @@ let waitTimer = () => {
     if (i >= 0) {
       waitTimerSpan.innerHTML = i;
       if (i === 0) {
-        page = window.open("https://google.com", "_blank");
+        page = window.open("https://jeeshan-khan.github.io/khushi/", "_blank");
       }
     }
 
