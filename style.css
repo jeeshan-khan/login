@@ -1,4 +1,42 @@
 
+@keyframes vibrate {
+  0%{
+      transform: rotate(1deg);
+  }
+  10%{
+      transform:  rotate(-1deg);
+  }
+  20%{
+      transform: rotate(1deg);
+  }
+  30%{
+      transform:  rotate(-1deg);
+  }
+  40%{
+      transform: rotate(1deg);
+  }
+  50%{
+      transform:  rotate(-1deg);
+  }
+  60%{
+      transform: rotate(1deg);
+  }
+  70%{
+      transform:  rotate(-1deg);
+  }
+  80%{
+      transform: rotate(1deg);
+  }
+  90%{
+      transform:  rotate(-1deg);
+  }
+  100%{
+      transform: rotate(1deg);
+  }
+  
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -134,3 +172,30 @@
     transform: translate(-50%,-50%)scale(0);
     transition: transform ease 1s;
   }
+
+  .massegePopUp{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    background-color: #fff;
+    z-index: 100;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #8f2c24;
+    gap: 30px;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease 0.8s;
+  }
+.massegePopUp h1{
+    font-size: 30px;
+} 
+.massegePopUp i{
+  font-size: 60px;
+}
+
+

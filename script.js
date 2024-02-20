@@ -4,21 +4,32 @@ let password = document.querySelector("#pass");
 let submitBtn = document.querySelector("#btn");
 let popUP = document.querySelector(".popUp");
 
-let user = "gayatri-sahoo";
-let passKey = "2302";
+let user = "jyoti";
+let passKey = "1912";
 let combinedLoginKey = (user + passKey).toUpperCase();
 let page;
 submitBtn.addEventListener("click", () => {
   let userValue = userName.value;
   let passValue = password.value;
-  userValue = userValue.toUpperCase();
-  passValue = passValue.toUpperCase();
-
-  if (userValue + passValue === combinedLoginKey) {
+  // userName = userName.toUpperCase();
+  // password = password.toUpperCase();
+  if(userName.value =="" ){
+   userName.style.animation =  " vibrate  0.5s alternate";
+   password.style.animation =  " vibrate  0.5s alternate";
+   setTimeout(() => {
+    userName.style.animation =  "none";
+    password.style.animation =  "none";
+     
+   }, 600); 
+   return;
+  }
+  if (userName.value.toUpperCase() + password.value.toUpperCase() === combinedLoginKey) {
     popUP.style.display = "flex";
     popUP.style.transform = "translate(-50%,-50%)scale(1)";
     // popUP.style.transition = "all ease 1s";
     waitTimer();
+  }else{
+    wrongPassword();
   }
 });
 
@@ -60,3 +71,11 @@ let closeBtnArrive = () => {
 let closeCurrentWindow = () => {
   window.close();
 };
+
+let massegePopUp = document.querySelector(".massegePopUp")
+let wrongPassword=()=>{
+  massegePopUp.style.top= "20px";
+  setTimeout(() => {
+    massegePopUp.style.top= "-50%";    
+  }, 2000);
+}
