@@ -4,8 +4,8 @@ let password = document.querySelector("#pass");
 let submitBtn = document.querySelector("#btn");
 let popUP = document.querySelector(".popUp");
 
-let user = "jyoti";
-let passKey = "1912";
+let user = "gayatri-jeeshan";
+let passKey = "2302";
 let combinedLoginKey = (user + passKey).toUpperCase();
 let page;
 submitBtn.addEventListener("click", () => {
@@ -40,7 +40,7 @@ let waitTimer = () => {
     if (i >= 0) {
       waitTimerSpan.innerHTML = i;
       if (i === 0) {
-        page = window.open("https://jeeshan-khan.github.io/khushi/", "_blank","popup = ture");
+        page = window.open("https://jeeshan-khan.github.io/second-page/", "_blank","popup = ture");
       }
     }
 
